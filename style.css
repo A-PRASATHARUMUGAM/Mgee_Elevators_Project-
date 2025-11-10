@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Header Section  */
+.header {
+   margin-bottom:100px;
+   border: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.showmenu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+}
+
+.navbar li>a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #505050;
+    padding:8px;
+    margin: 5px;
+}
+
+.navbar li>a:hover {
+    font-weight: bold;
+    color: #14524b;
+    transition: 0.4s ease all;
+}
+
+.get-quote-btn {
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #d76f28;
+}
+
+.boxhead {
+    margin-bottom: 114px;
+    border: 1px solid black;
+}
+
+
+.hmenu  {
+    display: none;
+   
+}
+.hmenu-line{
+    border-radius: 15px;
+    margin:4px;
+    background-color: #14524b;
+    width: 34px;
+    height: 6px;
+    
+}
+/* Logo Image  */
+.logo-img {
+    width: 256px;
+    height: 91px;
+}
+
+
+
+
+
+                                /* Navigation  Section 1  */
+.section-main-container {
+    background-image: url(../project_file/assets/img/section\ img.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.section-sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+}
+
+.section-maintext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Title Details   */
+
+.main-title1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.main-title2 {
+    font-size: 18px;
+    color: white;
+}
+
+/* Form Titel and Details  */
+
+.section-form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 29px 30px;
+    text-align: center;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.form-title {
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+select {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-container input::placeholder,
+select {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button  */
+.request-qoute-btn {
+    border: 1px solid gray;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #d76f28;
+    width: 100%;
+    border: none;
+}
+
+            /* Section 2  About Details  */
+
+/* About Details Main Container */
+
+.section2 {
+} 
+
+.aboutus-main-container {
+    display: flex;
+    align-items: center;
+    margin:40px;
+}
+
+.aboutus-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Aboutus Title  */
+.about-main-title,
+.mgee-main-text {
+    color: #14524b;
+}
+
+.about-sub-title {
+    color: #f46d21;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/* About Para Container */
+.about-para-container {
+    line-height: 1.5;
+    color: #656464;
+    font-weight: 500;
+}
+
+.about-para-container>p {
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+/* About Our Commitment */
+
+.about-commitments-container {
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.about-commit-para {
+    margin-left: 25px;
+}
+
+.about-commit-para li {
+    color: black;
+    line-height: 1;
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.about-commit-para li::marker {
+    color: #f46d21;
+}
+
+/* About us Image Container  */
+.aboutus-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    
+}
+.aboutus-img {
+    width: 100%;
+    /* max-width:580px; */
+    border-radius: 15px;
+}
+
+/* Section 3  Service Container  */
+
+.section3 {
+    text-align: center;
+    background: linear-gradient(#f1f6fd00, #fdf7f1, #fdf7f1, #ffffff);
+    padding: 80px;
+}
+
+.service-title-container {
+    margin-bottom:50px;
+}
+
+.service-title-container>h1 {
+    color: #14524b;
+    font-size: 36px;
+    margin: 10px;
+}
+
+.service-title-container>h4 {
+    color: #f46d21;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.service-title-container>h3 {
+    margin: 10px;
+    color: #656464;
+    font-size: 16px;
+}
+
+.service-work-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+/* Service Work Container */
+.service-works1,
+.service-works2,
+.service-works3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    width: 330px;
+    height: 291px;
+}
+
+/* Service Title */
+.service-title {
+    color: #f46d21;
+    font-size: 24px;
+}
+
+/* Service Image */
+.service-img {
+    width: 168px;
+    height: 134px;
+}
+
+/* Service Desc */
+.service-desc {
+    font-size: 16px;
+    color: #656464;
+}
+
+/* Section 4 Trust Service  */
+
+/* Trust  Service Container  */
+.section4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+/* Trust Container   */
+.trust-about-container {
+    padding: 20px;
+  
+}
+
+.trust-about-container>h3 {
+    color: #f46d21;
+    margin-bottom: 10px;
+}
+
+.trust-about-container>h1 {
+    color: #14524b;
+    margin-bottom: 10px;
+}
+
+.trust-about-container>p {
+    color: #656464;
+    margin-bottom: 50px;
+}
+
+/* Trust list Container */
+.trust-list-container {
+    margin-left: 20px;
+    line-height: 2;
+
+}
+
+.trust-list-container>li::marker {
+    color: #f46d21;
+}
+
+/* Trust Images */
+
+.trust-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.trust-img-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.trust-img1-div{
+    width: 316px;
+    margin:20px;
+}
+
+.trust-img1 {
+    width: 100%;
+    height: 454px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.trust-img2 {
+    width: 265px;
+    height: 238px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.trust-img3 {
+    width: 265px;
+    height: 238px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* Section 5 Recent Installations Container */
+
+.section5 {
+    padding: 50px;
+    background: linear-gradient(#f1f6fd00, #fdf7f1, #fdf7f1, #ffffff);
+}
+
+.install-about-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.install-about-container>h1 {
+    margin: 10px;
+    color: #f46d21;
+}
+
+.install-about-container>p {
+    color: #656464;
+}
+
+.install-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.install-img {
+    width: 270.89px;
+    height: 205.54px;
+    border-radius: 15px;
+}
+
+/* Section 6 Client Review Container  */
+
+.section6 {
+    text-align: center;
+    margin: 20px 0; 
+    padding: 20px;
+}
+
+/* Client Title here */
+.client-review-container {
+    margin-bottom: 25px;
+}
+
+.client-review-container>h1 {
+    color: #f46d21;
+    margin: 10px;
+}
+
+.client-review-container>p {
+    margin: 10px;
+    color: #656464;
+}
+
+/* Client Comment Container */
+
+.client-comments-container {
+    text-align: justify;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.client-img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.client-box {
+    width: 339px;
+    height: 295px;
+    border-radius: 14px;
+    line-height: 26px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 14px 22px #7f7f7f21;
+
+    /* background:linear-gradient(#0000002B,#00000000,#0000008A) ; */
+}
+
+.client-name {
+    color: #14524b;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 6px;
+    align-self: flex-start;
+}
+
+.client-desc {
+    color: #656464;
+    padding: 6px;
+    text-align: justify;
+
+    
+}
+
+.client-dept {
+    padding: 6px;
+    color: #656464;
+    align-self: flex-start;
+}
+
+/* Section 7 Qoute Container */
+
+.section7 {
+    background-image: url(assets/img/qouteimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section7>h1 {
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+.section7>button {
+    padding: 10px;
+    background-color: #f46d21;
+    border: none;
+    width: 192px;
+    height: 58px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* Section 9 Footer  */
+
+.section9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 96px;
+    background-color: #14524b;
+}
+
+.section9>p {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Media Query */
+
+@media all and (max-width:1200px){
+
+    /* Section 1 */
+        .section-sub-container{
+            display: flex;
+            width:90%;
+
+        }
+
+
+    .main-title1{
+       font-size: 2rem ;
+    }
+
+    .main-title2{
+
+        margin: 10px;
+        padding: 4px;
+    }
+
+
+    .form-title{
+        font-size: 1.4rem;
+    }
+
+    .request-qoute-btn{
+        font-size: 1rem;
+
+    }
+
+    /* Section 2 */
+
+
+    .about-main-title{
+        padding: 10px;
+        font-size:1.6rem;
+    }
+
+    .about-para-container>p{
+        margin: 0;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    .about-sub-title{
+        font-size: 1.2rem;
+    }
+
+    .about-commit-para >li{
+        font-size:0.8rem;
+        margin-top: 14px;
+}
+
+
+/* Section 4 */
+.section4{
+    padding: 40px;
+}
+
+
+.trust-about-container>h1 {
+    font-size: 1.8rem;
+
+   
+}
+
+
+}
+
+
+@media all and (max-width:1000px ) {
+    
+    /* Secction 1 */
+
+    .section-sub-container{
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .section-maintext-container{
+        text-align: center;
+    
+    }
+
+    .section-form-container{
+        padding: 20px;
+        width: 100%;
+        
+    }
+    .section-main-container{
+        height: auto;
+      
+    }
+
+    /* Section 2  */
+
+.aboutus-main-container {
+        border: 1px solid white;
+        flex-direction: column;
+        background-color: rgba(255, 166, 0, 0.198);
+        margin: 35px 20px;
+        border-radius: 20px;
+
+    }
+
+    /*Section 3  */
+
+.section3{
+    padding: 70px;
+}
+
+/* Section 4 */
+
+.section4{
+    padding: 35px;
+    flex-direction: column;
+}
+
+.trust-about-container>h1 {
+    font-size: 1.6rem;  
+}
+}
+
+
+
+
+
+
+@media all and (max-width:930px){
+
+    /* Section 1 */
+
+.hmenu{
+    display: block;
+
+}
+
+.showmenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s ease all;
+}
+.showmenu > li{
+  margin: 10px;
+  text-align: center;
+}
+
+.addmenu{
+       display:block;
+}
+.logo-img{
+    width: 256px;
+    height: 80px;
+}
+
+
+    /*Section 3  */
+
+.section3{
+    padding: 60px;
+}
+
+.service-title-container > h1{
+    font-size: 1.5rem;
+}
+.service-title-container > h3{
+    font-size: 1rem;
+}
+
+.service-title{
+    font-size: 1.5rem;
+}
+
+}
+
+
+
+@media all and (max-width:768px) {
+    
+/* Section 1 */
+
+.main-title1{
+    font-size: 1.6rem;
+}
+.main-title2{
+    font-size: 1rem;
+}
+    /* Section 4 */
+
+.section4{
+     background: linear-gradient(#e8f0fa00, #fdf7f1, #f8efe6, #ffffff); 
+     padding: 20px;
+}
+
+.trust-about-container{
+    background-color: rgba(211, 211, 211, 0.5); 
+    border-radius: 10px;
+    margin: 10px 0  ;
+}
+.trust-img-container{
+    flex-direction: column;
+
+}
+
+.trust-img1-div{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+.trust-img1{
+    width:100%;
+    margin: 0;
+    min-width:200px;
+}
+
+.trust-img-container2{
+    padding: 10px;
+    width: 100%;
+}
+.trust-img2{
+    width: 100%;
+
+}
+
+.trust-img3{
+    width: 100%;
+}
+
+
+/* Section 5  */
+.section5{
+    padding: 20px;
+}
+
+.install-about-container{
+    margin: 20px 0;
+    padding: 10px;
+}
+.install-about-container >h1{
+    font-size: 1.6rem;
+}
+.install-about-container >p{
+    font-size:0.8rem;
+}
+
+/* Section 6  */
+
+.section6{
+    padding: 20px;
+}
+.client-review-container{
+    border: 1px solid yellow;
+}
+.client-review-container >h1{
+    font-size: 1.6rem;
+}
+
+.client-review-container>p{
+    font-size:0.8rem;
+}
+
+/* Section 7  */
+.section7>h1 {
+
+    font-size: 1.6rem;
+}
+
+.section7 >button{
+    font-size:0.8rem;
+    width:30vw;
+    font-weight: bold;
+}
+
+
+
+/* Section 9 Footer */
+
+.section9{
+    flex-direction: column;
+    justify-content: center;
+    gap:15px;
+    text-align: center;
+    height:120px;
+
+}
+.section9 > p{
+    font-size: 0..8rem;
+}
+
+
+
+
+
+}
+
+
+
+            
+
+
+@media all and (max-width:480px){
+
+    /* Section 1 */
+.navbar{
+    padding: 0 10px;
+}
+  
+.get-quote-btn {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size:0.8rem;
+    font-weight: bold;
+    color: white;
+}
+.logo-img{
+    margin: 10px;
+    width: 220px;
+
+}
+
+.section-sub-container{
+    padding: 10px;
+   
+}
+
+
+
+    /*Section 3  */
+
+.section3{
+    padding: 40px;
+}
+
+.service-title{
+    font-size: 1.2rem;
+}
+.service-desc{
+    font-size: 0.8rem;
+}
+
+
+/* Section 6 */
+.client-desc{
+        overflow: scroll;
+}
+
+
+
+
+
+}
+
